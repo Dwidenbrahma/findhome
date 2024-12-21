@@ -1,0 +1,94 @@
+.main {
+  margin: 1.178em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.reserveForm {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+}
+
+label {
+  margin: 0.4em 0;
+}
+
+input {
+  padding: 0.34em;
+  outline: none;
+}
+
+.noOfGuest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  padding: 0 0.34em;
+  margin: 10px 0 0 0;
+}
+
+.span {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.btn {
+  margin: 1.23em 0.44em;
+  padding: 0.53em 0;
+  font-size: 18px;
+  text-transform: capitalize;
+  background-color: rgb(216, 106, 106);
+  color: #fff;
+  border: none;
+}
+.guest {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bill {
+  margin: 10px 0;
+}
+
+.price,
+.tax,
+.total {
+  display: flex;
+  justify-content: space-between;
+}
+
+.total {
+  border-top: 1px solid #000000;
+  margin: 4px 0;
+}
+
+.price,
+.tax,
+.total p {
+  font-weight: 900;
+  font-size: 15px;
+}
+@media screen and (min-width: 768px) {
+  .reserveForm {
+    width: 70%;
+  }
+  .btn {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .reserveForm {
+    width: 50%;
+  }
+  .btn {
+    width: 40%;
+    margin: 0 auto;
+  }
+}

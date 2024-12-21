@@ -1,0 +1,24 @@
+/* Container to hide overflow */
+.carouselContainer {
+  overflow: hidden;
+  width: 100%; /* Make sure the container takes the full width */
+}
+
+/* Carousel slider to display slides in a row */
+.carouselSlider {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+}
+
+/* Each slide takes up 100% width */
+.carouselSlide {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+/* Style for the images to make them responsive */
+.img {
+  width: 100%;
+  height: 70vh; /* Fill the entire height of the slide */
+  aspect-ratio: 16/9;
+}

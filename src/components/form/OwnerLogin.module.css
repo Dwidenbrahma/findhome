@@ -1,0 +1,19 @@
+.loginForm {
+  background-color: rgb(211, 92, 112);
+  margin: 10px auto;
+  color: #fff;
+  width: 50%;
+  padding: 3rem;
+}
+
+.btn {
+  background-color: #fff;
+  color: #000;
+}
+.input {
+  outline: none;
+  margin: 10px;
+}
+.main {
+  padding: 5rem;
+}

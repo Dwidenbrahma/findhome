@@ -1,0 +1,163 @@
+.show {
+  display: flex !important;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: animate 1s 1;
+  background-color: #e36868;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+}
+
+.line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.toShow {
+  display: none;
+}
+
+.logo,
+.hamberger {
+  width: 23%;
+  margin: 30px 8px;
+  animation: animate 1s 1;
+  cursor: pointer;
+}
+
+.hamberger {
+  filter: invert(1);
+}
+
+.left {
+  position: fixed;
+  top: 6px;
+  z-index: 10;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #e36868;
+  animation: left_animation 1s 1;
+}
+
+.close {
+  width: 390px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+  padding-right: 40px;
+  animation: left_animation 1s 1;
+}
+
+.closelogo {
+  width: 10%;
+  margin: 0 10px;
+  padding: 7px;
+  cursor: pointer;
+  filter: invert(1);
+}
+
+.ul {
+  animation: left_animation 2s 1;
+  text-align: center;
+}
+
+.link {
+  color: #efede3;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+
+.li {
+  padding: 10px 0;
+}
+
+.li:hover {
+  background-color: #5e6f69;
+}
+
+@keyframes animate {
+  from {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes left_animation {
+  from {
+    transform: translateX(200px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .logo,
+  .hamberger {
+    width: 10%;
+    margin: 30px 8px;
+  }
+
+  .right {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #e36868;
+    padding-left: 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .logo,
+  .hamberger {
+    width: 10%;
+    margin: 15px 8px;
+  }
+  .left {
+    display: none !important;
+  }
+  .close {
+    display: none !important;
+  }
+  .line {
+    display: none !important;
+  }
+  .uli {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .lii {
+    margin: 0 10px 0 10px;
+  }
+  .toShow {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+  }
+}

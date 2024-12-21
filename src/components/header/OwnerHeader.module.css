@@ -1,0 +1,23 @@
+.nav {
+  background-color: #e36868;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+}
+.left {
+  display: flex;
+  justify-content: center;
+}
+.link {
+  color: #fff;
+}
+.img {
+  width: 10%;
+}
+.right {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

@@ -1,0 +1,36 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3rem;
+}
+.rightContainer {
+  background-color: #ee188a;
+  padding: 2.2rem;
+  border-radius: 10px 0 0 10px;
+  color: #fff;
+  flex: 4;
+}
+
+.form {
+  flex: 6;
+  padding: 2rem;
+  border-radius: 0 10px 10px 0;
+}
+.btn {
+  background-color: #ee188a;
+}
+.span {
+  font-weight: 900;
+}
+.ul {
+  list-style: dotted;
+  padding: 10px;
+}
+.li {
+  list-style: dotted;
+}
+.h1,
+h3 {
+  text-align: center;
+}
